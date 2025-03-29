@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("/assests/font/Lobster-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PermanentMarker";
+  src: url("/assests/font/PermanentMarker-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lansui";
+  src: url("/assests/font/Iansui-Regular.ttf") format("truetype");
+}
+
+.lobster {
+  font-family: "Lobster", sans-serif;
+}
+
+.permanent-marker {
+  font-family: "PermanentMarker", sans-serif;
+}
+
+.text-greencode {
+  color: #047857 !important;
+}
+.bg-greencode {
+  background-color: #047857 !important;
+}
+
+.border-greencode {
+  border-color: #047857;
+}
+
+.text-gray {
+  color: gray !important;
+}
+
+.bg-smoke {
+  background-color: rgb(219, 219, 219) !important;
+}
+
+.btn-greencode {
+  color: white !important;
+  background-color: #047857 !important;
+  border-color: #065f46 !important;
+  transition: transform 0.5s ease !important;
+}
+
+.btn-greencode:hover {
+  background-color: #065f46 !important;
+  transform: scale(1.1);
+}
+
+.btn-greencode:active {
+  color: #148e42 !important;
+  background-color: whitesmoke !important;
+}
+
+.btn-cancel {
+  color: white !important;
+  background-color: #636363 !important;
+  border-color: #636363 !important;
+  transition: transform 0.5s ease !important;
+}
+
+.btn-cancel:hover {
+  background-color: #950f0f !important;
+  transform: scale(1.1);
+}
+
+.btn-cancel:active {
+  color: #950f0f !important;
+  background-color: whitesmoke !important;
+}
+
+.btn-goldcode {
+  color: white !important;
+  background-color: #d8b422 !important;
+  border-color: #d8b422 !important;
+  transition: transform 0.5s ease !important;
+}
+
+.btn-goldcode:hover {
+  background-color: #c8a422 !important;
+  transform: scale(1.1);
+}
+
+.btn-goldcode:active {
+  color: #d8b422 !important;
+  background-color: whitesmoke !important;
+}
+
+.btn .list-white {
+  color: white !important;
+  transition: all 0.5s ease !important;
+}
+
+.list-white:hover {
+  color: rgb(186, 186, 186) !important;
+  transform: scale(1.2);
+}
+
+.list-white:active {
+  color: gray !important;
+}
+
+.no-translate {
+  translate: none !important;
+}
+
+.z-100 {
+  z-index: 100 !important;
+}
+
+.z-200 {
+  z-index: 200 !important;
+}
+
+.fs-7 {
+  font-size: 0.9rem;
+}
+
+/* ##################################class=""########### */
+
+body {
+  background-color: bla !important;
+  font-family: "Lansui", sans-serif !important;
+  font-size: 16px;
+  color: white;
+  /* user-select: none; */
+  -webkit-user-drag: none;
+}
+
+/* ############################################# */
+
+.btn-close {
+  background: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#menuToggle {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.w-costum {
+  width: 100%;
+}
+
+/* Contoh penyesuaian modal pada layar kecil */
+@media (max-width: 576px) {
+  .modal-dialog {
+    max-width: 100% !important; /* Lebar modal 90% dari lebar layar */
+  }
+}
+
+/* Contoh penyesuaian modal pada layar sedang */
+@media (min-width: 577px) and (max-width: 991px) {
+  .modal-dialog {
+    max-width: 70% !important; /* Lebar modal 70% dari lebar layar */
+  }
+
+  .w-costum {
+    width: 60%;
+  }
+}
+
+/* Contoh penyesuaian modal pada layar besar */
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 50% !important; /* Lebar modal 50% dari lebar layar */
+  }
+
+  .w-costum {
+    width: 50%;
+  }
+}
+
+/* ############################################# */
+
+@keyframes x {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.spin {
+  animation: x 3s ease-in-out infinite;
+}
+
+/* ############################################# */
+
+section {
+  padding: 40px;
+}
+
+.slide {
+  background-color: #f5f5f5;
+  margin: 20px 0;
+}
+
+.slide h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #047857;
+}
+
+.slide p {
+  font-size: 16px;
+  color: #333;
+}
+
+.react {
+  margin: 0 auto;
+  width: 15rem;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+#effect {
+  transition: transform 0.5s ease, border 0.3s ease;
+}
+
+#effect:hover {
+  border: 2px solid #065f46;
+  transform: scale(1.05);
+}
+
+.wush {
+  transition: all 0.3s ease;
+}
+
+.wush:hover {
+  transform: scale(1.7);
+}
+
+/* ############################################# */
+
+footer {
+  background-color: #3f3e4b;
+}
+
+.touch {
+  color: white;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+.touch:hover {
+  color: gray;
+}
+
+/* ############################################# */
+
+#language-select {
+  color: black;
+  background-color: #f0f8ff;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+#language-select:hover {
+  background-color: #e7e7e7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#language-select:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  display: none;
+  z-index: 100;
+}
+
+/* ############################################# */
+
+.menu {
+  position: relative;
+  padding: 0.5rem !important;
+  overflow: hidden; /* Penting untuk efek slide */
+  transition: color 0.3s ease;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Mulai dari luar kiri */
+  width: 100%;
+  height: 100%;
+  background-color: #04785730; /* Warna background */
+  transition: left 0.3s ease-out; /* Transisi slide */
+  z-index: -10; /* Letakkan di belakang teks */
+}
+
+.menu:hover::before {
+  left: 0; /* Slide ke dalam saat hover */
+}
+
+.menu:hover {
+  color: black !important;
+}
+
+/* ############################################# */
+
+.flip-container {
+  perspective: 1000px;
+  width: 200px; /* Sesuaikan lebar sesuai kebutuhan */
+  height: 200px; /* Sesuaikan tinggi sesuai kebutuhan */
+  margin: 0 auto; /* Pusatkan elemen */
+}
+
+.flip-container .flipper {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container .front,
+.flip-container .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-container .front {
+  z-index: 2;
+}
+
+.flip-container .back {
+  z-index: 4;
+  transform: rotateY(180deg);
+}
+
+.show-up {
+  transition: all 0.3s ease;
+}
+
+.show-up:hover {
+  transform: scale(1.07);
+  color: #f0f8ff;
+  background-color: #047857c5;
+  font-weight: bold;
+}
+
+.touch-x {
+  transition: all 0.3s ease;
+}
+
+.touch-x:hover {
+  color: #047857 !important;
+  transform: scale(1.5);
+}
+
+.touch-x:active {
+  color: gray !important;
+}
+
+/* ############################################# */
+
+.background-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  pointer-events: none;
+  background: url("/assests/img/svg/viera.svg") no-repeat center center;
+  background-size: cover;
+}

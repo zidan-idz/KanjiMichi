@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="KanjiMichi, This is a simple website for practicing kanji"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Kanji, Japanese, Practice, Learning" />
+    <meta name="author" content="Zidan_IDz" />
+    <meta name="google" content="notranslate" />
+    <title id="title">KanjiMichi</title>
+    <link
+      rel="shortcut icon"
+      href="/assests/img/png/izumi.png"
+      type="image/png-icon"
+    />
+    <link rel="stylesheet" href="/assests/css/style.css" />
+    <link rel="stylesheet" href="/assests/css/aos.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/awesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- ########################################################################################## -->
+    <header class="position-sticky top-0 z-100">
+      <nav
+        class="navbar navbar-dark bg-greencode shadow"
+        class=""
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-once="true"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand text-white permanent-marker no-translate"
+            href="#"
+          >
+            <img
+              src="/assests/img/png/izumi.png"
+              height="30"
+              class="d-inline-block spin"
+            />
+            KanjiMichi
+          </a>
+          <div class="d-flex order-lg-last align-items-center">
+            <select
+              id="language-select"
+              class="form-select form-select-sm me-2"
+            >
+              <option value="en">English</option>
+              <option value="id">Indonesia</option>
+            </select>
+            <button
+              class="navbar-toggler z-3 list-white"
+              type="button"
+              id="menuToggle"
+            >
+              <i class="fa fa-list-ul text-white"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <div
+      class="modal fade m-0"
+      id="mobileMenu"
+      tabindex="-1"
+      aria-labelledby="mobileMenuLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-smoke z-200">
+          <div class="modal-header">
+            <h5
+              class="modal-title text-greencode permanent-marker fs-3"
+              id="mobileMenuLabel"
+            >
+              KanjiMichi
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-unstyled text-dark">
+              <li>
+                <a
+                  href="/index.html"
+                  class="nav-link py-1 py-lg-2 menu text-gray"
+                  ><i class="fa fa-home"></i> <span id="home">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="/main/about.html" class="nav-link py-1 py-lg-2 menu"
+                  ><i class="fa fa-info-circle"></i>
+                  <span id="about">About</span>
+                </a>
+              </li>
+              <li>
+                <a href="/main/support.html" class="nav-link py-1 py-lg-2 menu"
+                  ><i class="fa fa-envelope"></i>
+                  <span id="contact">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########################################################################################## -->
+    <main class="position-relative">
+      <section class="container mt-1 mt-md-5 mt-lg-5 mb-5 p-sm-3 p-lg-5">
+        <div class="row align-items-center text-center">
+          <div class="col-md-5 order-1 order-lg-2 p-4">
+            <img
+              src="/assests/img/svg/sumy.svg"
+              alt="KanjiMichi"
+              class="img-fluid"
+              class=""
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-once="true"
+            />
+          </div>
+          <div
+            class="col-md-7 order-2 order-lg-1 p-4"
+            class=""
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
+            <h1 class="text-greencode fw-bolder" id="tagline">
+              <span>KanjiMichi</span> - Easy Kanji, Step by Step
+            </h1>
+            <hr />
+            <p class="text-dark" id="description">
+              This simple website is here to help you practice memorizing kanji
+              with ease.
+            </p>
+            <a href="#" class="btn btn-greencode mt-4 mt-lg-5">
+              <i class="fas fa-quote-right"></i>
+              <span id="startLearning">Start Learning Now!</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------ -->
+      <section class="slide">
+        <hr class="react" />
+        <div class="container text-center py-5">
+          <h2
+            class="text-greencode fw-bolder my-1 my-md-3 my-lg-5"
+            id="learnKanjiEase"
+          >
+            Learn Kanji with Ease Using
+            <span>KanjiMichi</span>
+          </h2>
+          <div
+            class="row justify-content-center align-items-center text-center"
+          >
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card m-1 m-md-2 m-lg-3 mt-5 shadow-sm rounded-3 border-2"
+                data-aos="flip-up"
+                data-aos-delay="100"
+                id="effect"
+              >
+                <div class="card-body">
+                  <h3 class="card-title fw-lighter" id="cleanUI">
+                    Clean and Simple UI Design
+                  </h3>
+                  <hr />
+                  <p class="card-text" id="cleanUIdesc">
+                    A minimalist design ensures users focus on content without
+                    distractions, leading to a streamlined and more enjoyable
+                    learning experience
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card m-1 m-md-2 m-lg-3 mt-5 shadow-sm rounded-3 border-2"
+                data-aos="flip-up"
+                data-aos-delay="200"
+                id="effect"
+              >
+                <div class="card-body">
+                  <h3 class="card-title fw-lighter" id="simpleUnderstand">
+                    Simple and Easy to Understand
+                  </h3>
+                  <hr />
+                  <p class="card-text" id="simpleUnderstandDesc">
+                    Content is broken down into manageable parts for easy
+                    digestion, so users can absorb information without feeling
+                    overwhelmed or frustrated.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card m-1 m-md-2 m-lg-3 mt-5 shadow-sm rounded-3 border-2"
+                data-aos="flip-up"
+                data-aos-delay="300"
+                id="effect"
+              >
+                <div class="card-body">
+                  <h3 class="card-title fw-lighter" id="interactiveLearning">
+                    Interactive Learning Method
+                  </h3>
+                  <hr />
+                  <p class="card-text" id="InteractiveLearningDesc">
+                    Interactive learning approaches enable active user
+                    engagement with the content, resulting in a more engaging
+                    and effective learning experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card m-1 m-md-2 m-lg-3 mt-5 shadow-sm rounded-3 border-2"
+                data-aos="flip-up"
+                data-aos-delay="400"
+                id="effect"
+              >
+                <div class="card-body">
+                  <h3 class="card-title fw-lighter" id="stepByStep">
+                    Step-by-Step Learning Approach
+                  </h3>
+                  <hr />
+                  <p class="card-text" id="stepByStepDesc">
+                    It allows users to progress at their own pace, starting from
+                    the basics and advancing to more complex concepts, which
+                    enhances understanding and confidence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ########################################################################################## -->
+    <footer class="position-relative bottom-0">
+      <div class="container text-white py-5">
+        <div class="row justify-content-between">
+          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <h4 class="permanent-marker fw-bolder">KanjiMichi</h4>
+            <p id="footerDesc">
+              Learn Kanji with ease and confidence. Start your journey today!
+            </p>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="d-grid justify-content-center align-items-center">
+              <h5 class="fw-bold" id="followMe">Follow Me:</h5>
+              <div>
+                <a
+                  href="https://www.facebook.com/muhammadraid.zaidani"
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/zidan_idz/"
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@ZeyShyy."
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  href="https://github.com/zidan-idz"
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5" translate="no">
+          <p class="fs-7">
+            Made with <i class="fa fa-heart text-danger wush"></i> By Zidan IDz
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <div>
+      <button id="scrollButton" class="btn btn-goldcode scroll-btn">
+        <i class="fa fa-arrow-circle-up"></i>
+      </button>
+    </div>
+    <!-- ########################################################################################## -->
+    <script src="/assests/js/script.js"></script>
+    <script src="/assests/js/aos.js"></script>
+    <script src="/assests/js/lingo.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Page About KanjiMichi, This is a simple website for practicing kanji"
+    />
+    <meta name="robots" content="about, follow" />
+    <meta name="keywords" content="Kanji, Japanese, Practice, Learning" />
+    <meta name="author" content="Zidan_IDz" />
+    <meta name="google" content="notranslate" />
+    <title id="title">KanjiMichi</title>
+    <link
+      rel="shortcut icon"
+      href="/assests/img/png/izumi.png"
+      type="image/png-icon"
+    />
+    <link rel="stylesheet" href="/assests/css/style.css" />
+    <link rel="stylesheet" href="/assests/css/aos.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/awesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Dekorasi Latar Belakang (SVG) -->
+    <div
+      class="background-decor"
+      data-aos="fade-down"
+      data-aos-delay="100"
+      data-aos-once="true"
+    ></div>
+    <!-- ########################################################################################## -->
+    <header class="position-sticky top-0 z-100">
+      <nav
+        class="navbar navbar-dark bg-greencode shadow"
+        class=""
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-once="true"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand text-white permanent-marker no-translate"
+            href="#"
+          >
+            <img
+              src="/assests/img/png/izumi.png"
+              height="30"
+              class="d-inline-block spin"
+            />
+            <span translate="no">KanjiMichi</span>
+          </a>
+          <div class="d-flex order-lg-last align-items-center">
+            <select
+              id="language-select"
+              class="form-select form-select-sm me-2"
+            >
+              <option value="en">English</option>
+              <option value="id">Indonesia</option>
+            </select>
+            <button
+              class="navbar-toggler z-3 list-white"
+              type="button"
+              id="menuToggle"
+            >
+              <i class="fa fa-list-ul text-white"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="modal fade m-0"
+      id="mobileMenu"
+      tabindex="-1"
+      aria-labelledby="mobileMenuLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-smoke z-200">
+          <div class="modal-header">
+            <h5
+              class="modal-title text-greencode permanent-marker fs-3"
+              id="mobileMenuLabel"
+            >
+              <span translate="no">KanjiMichi</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-unstyled text-dark">
+              <li>
+                <a href="/index.html" class="nav-link py-1 py-lg-2 menu"
+                  ><i class="fa fa-home"></i> <span id="home">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="/main/about.html" class="nav-link py-1 py-lg-2 menu"
+                  ><i class="fa fa-info-circle"></i>
+                  <span id="about">About</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/main/support.html"
+                  class="nav-link py-1 py-lg-2 menu text-gray"
+                  ><i class="fa fa-envelope"></i>
+                  <span id="contact">Support</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ########################################################################################## -->
+    <main class="position-relative">
+      <section class="container mt-5 mb-5 py-5 pt-3">
+        <div class="row justify-content-center">
+          <!-- Left side: Title -->
+          <div
+            class="col-12 text-center text-lg-start text-md-start text-lg-left my-2"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
+            <h2 class="fw-bolder fs-2 text-greencode mb-4" id="FSpoint">
+              FEEDBACK & SUPPORT
+            </h2>
+          </div>
+          <div
+            class="col-12 col-lg-5"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
+            <div class="mb-4">
+              <p class="fs-5" id="FSfill">
+                Feel free to reach out to me for any questions, feedback, or
+                constructive suggestions.
+              </p>
+            </div>
+            <div
+              class="d-flex justify-content-center justify-content-lg-start m-3"
+            >
+              <a href="#" target="_blank" class="fs-4 text-black mx-3 touch-x">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" target="_blank" class="fs-4 text-black mx-3 touch-x">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="fs-4 text-black mx-3 touch-x">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="#" target="_blank" class="fs-4 text-black mx-3 touch-x">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-lg-7"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-once="true"
+          >
+            <div class="contact-form p-4 rounded shadow-sm">
+              <form action="https://formspree.io/f/mzzerjwy" method="POST">
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-sm py-3 px-4"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    class="form-control border-0 shadow-sm py-3 px-4"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="tel"
+                    class="form-control border-0 shadow-sm py-3 px-4"
+                    name="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    class="form-control border-0 shadow-sm py-3 px-4"
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="row">
+                  <div
+                    class="col-12 col-md-6 col-lg-6 text-center text-lg-end text-md-end"
+                  >
+                    <button
+                      type="submit"
+                      class="btn btn-greencode mt-4 mt-lg-5 w-50"
+                      id="sendMSG"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  <div
+                    class="col-12 col-md-6 col-lg-6 text-center text-lg-start text-md-start"
+                  >
+                    <button
+                      type="reset"
+                      class="btn btn-cancel mt-4 mt-lg-5 w-50"
+                      id="clearMSG"
+                    >
+                      Clear All
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ########################################################################################## -->
+    <footer class="position-relative bottom-0">
+      <div class="container text-white py-5">
+        <div class="row justify-content-between">
+          <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+            <h4 class="permanent-marker fw-bolder">KanjiMichi</h4>
+            <p id="footerDesc">
+              Learn Kanji with ease and confidence. Start your journey today!
+            </p>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="d-grid justify-content-center align-items-center">
+              <h5 class="fw-bold" id="followMe">Follow Me:</h5>
+              <div>
+                <a
+                  href="https://www.facebook.com/muhammadraid.zaidani"
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/zidan_idz/"
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@ZeyShyy."
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  href="https://github.com/zidan-idz"
+                  target="_blank"
+                  class="touch me-3"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5" translate="no">
+          <p class="fs-7">
+            Made with <i class="fa fa-heart text-danger wush"></i> By Zidan IDz
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <div>
+      <button id="scrollButton" class="btn btn-goldcode scroll-btn">
+        <i class="fa fa-arrow-circle-up"></i>
+      </button>
+    </div>
+    <!-- ########################################################################################## -->
+    <script src="/assests/js/script.js"></script>
+    <script src="/assests/js/aos.js"></script>
+    <script src="/assests/js/lingo.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
